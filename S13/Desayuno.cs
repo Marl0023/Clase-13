@@ -33,7 +33,7 @@ namespace S13
                 }
                 Array.Resize(ref nom, nom.Length - 1);
                 posicion--;
-                Console.WriteLine("\nLa opcion fue eliminada correcatamente");
+                Console.WriteLine("\nLa opcion fue eliminada correctamente");
             }
             else
             {
