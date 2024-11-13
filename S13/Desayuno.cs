@@ -19,6 +19,9 @@ namespace S13
         public string[] ListaDias() { 
             return Dias.Split(',');
         }
+        private string[] menu = new string[] { "chaufa", "Pan con pollo", "Pan con lomo" }; 
+
+
     }
     
     
