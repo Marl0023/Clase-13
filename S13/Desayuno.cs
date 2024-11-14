@@ -43,7 +43,18 @@ namespace S13
             Console.WriteLine($"Menu {emenu} Elimando Correctamente");
             Console.ResetColor();
         }
+        public void Agregar(string amenu)
+        {
+            string[] nuevomenu = new string[menu.Length + 1];
+            for (int i = 0; i < menu.Length; i++)
+            {
+                nuevomenu[i] = menu[i];
+            }
+            nuevomenu[nuevomenu.Length - 1] = amenu;
+            menu = nuevomenu;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Menu {amenu} agregado correctamente");
+            Console.ResetColor();
+        }
     }
-    
-    
 }

@@ -21,6 +21,30 @@ bool u = true;
 
 do
 {
+    Console.WriteLine("Opciones del menu: Mostrar - Agregar - Eliminar - Salir");
+    Console.Write("Ingrese una opcion: ");
+    string opc = Console.ReadLine().ToLower().Trim();
+    switch (opc)
+    {
+        case "eliminar":
+            Console.Write("Ingrese el menu que desea eliminar: ");
+            string eliminar = Console.ReadLine();
+            d1.Eliminar(eliminar);
+            break;
+        case "agregar":
+            Console.Write("Ingrese lo que desee eliminar: ");
+            string agregar = Console.ReadLine().ToLower().Trim();
+            d1.Agregar(agregar);
+            break;
+        case "mostrar":
+            break;
+        case "salir":
+            u = false;
+            break;
+        default:
+            Console.WriteLine("¡Error, vuelva a intentarlo!");
+            break;
+    } 
 
 }while (u == true);
-
+Console.WriteLine("Cerrando programa");
