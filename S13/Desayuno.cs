@@ -56,5 +56,16 @@ namespace S13
             Console.WriteLine($"Menu {amenu} agregado correctamente");
             Console.ResetColor();
         }
+        public void ListaMenu()
+        {
+            Console.WriteLine("Menu del dia de hoy: ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            foreach (string n in menu)
+            {
+                Console.WriteLine("* " + n);
+
+            }
+            Console.ResetColor();
+        }
     }
 }
