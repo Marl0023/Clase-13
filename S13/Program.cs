@@ -32,6 +32,9 @@ do
             d1.Eliminar(eliminar);
             break;
         case "agregar":
+            Console.Write("Ingrese lo que desee eliminar: ");
+            string agregar = Console.ReadLine().ToLower().Trim();
+            d1.Agregar(agregar);
             break;
         case "mostrar":
             break;
