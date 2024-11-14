@@ -37,12 +37,15 @@ do
             d1.Agregar(agregar);
             break;
         case "mostrar":
+            d1.ListaMenu();
             break;
         case "salir":
             u = false;
             break;
         default:
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("¡Error, vuelva a intentarlo!");
+            Console.ResetColor();
             break;
     } 
 
